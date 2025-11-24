@@ -260,11 +260,17 @@ img {
     }
 }
 
-header div {
+header {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
+
+header div input,
+header div button {
+    vertical-align: middle;
+}
+
+
 
 
