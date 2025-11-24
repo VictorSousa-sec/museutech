@@ -53,3 +53,22 @@ function Procurar() {
 
 // Chama ao iniciar a página
 window.onload = carregarSugestoes;
+
+function search() {
+    const searchValue = document.getElementById("searchInput").value.toLowerCase();
+
+    const target = document.getElementById(searchValue);
+    if (target) {
+        target.scrollIntoView({ behavior: "smooth" });
+    } else {
+        alert("Nada encontrado!");
+    }
+}
+
+document.getElementById("searchInput").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        search();
+    }
+});
+
