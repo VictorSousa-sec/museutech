@@ -32,7 +32,7 @@ function carregarSugestoes() {
 function Procurar() {
     const texto = document.querySelector("#campo-busca").value.toLowerCase();
 
-    // pega todos os articles (cards)
+
     const cards = document.querySelectorAll("article.card");
 
     let encontrado = false;
@@ -51,7 +51,7 @@ function Procurar() {
     }
 }
 
-// Chama ao iniciar a página
+
 window.onload = carregarSugestoes;
 
 function search() {
